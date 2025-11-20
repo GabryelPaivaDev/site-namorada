@@ -1,0 +1,230 @@
+:root{
+    --bg1:#ff9a9e;
+    --bg2:#fecfef;
+    --card:#fff5f7;
+    --accent:#ff6b81;
+    --muted:#6b6b6b;
+}
+
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%}
+
+body.videos-page{
+    font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    background: url('../../assets/img/Fundo da Página.jpg') center/cover no-repeat fixed;
+    background-attachment: fixed;
+    padding:24px;
+    -webkit-font-smoothing:antialiased;
+    color:#333;
+    min-height:100vh;
+    display:block;
+    align-items:initial;
+    justify-content:initial;
+}
+
+.videos-wrapper{
+    max-width:1200px;
+    margin:0 auto;
+    background:rgba(255,255,255,0.9);
+    border-radius:28px;
+    padding:32px;
+    box-shadow:0 25px 60px rgba(0,0,0,0.12);
+}
+
+.videos-header h1{
+    font-family:'Great Vibes',cursive;
+    font-size:48px;
+    color:var(--accent);
+    text-align:center;
+}
+
+.videos-header{
+    margin-bottom:12px;
+    text-align:center;
+}
+
+.videos-header p{
+    color:#6b4052;
+    margin:8px 0 18px;
+}
+
+.return-link{
+    display:inline-flex;
+    text-decoration:none;
+    margin-top:18px;
+}
+
+.videos-grid{
+    margin-top:10px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:24px;
+}
+
+.video-card{
+    background:#fff5f9;
+    border-radius:20px;
+    padding:16px;
+    box-shadow:0 15px 35px rgba(0,0,0,0.08);
+}
+
+.video-card h2{
+    font-size:16px;
+    margin-bottom:8px;
+    color:#b14c62;
+}
+
+.video-card video{
+    width:100%;
+    border-radius:16px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* Botão de voltar */
+.return-button{
+    position:relative;
+    background:#fff;
+    width:190px;
+    height:58px;
+    border-radius:24px;
+    font-size:18px;
+    font-weight:600;
+    color:#c44469;
+    border:1px solid #ffb7c8;
+    cursor:pointer;
+    overflow:hidden;
+    box-shadow:0 15px 30px rgba(234,90,123,0.2);
+    transition:transform .3s ease;
+    display:flex;
+    align-items:center;
+    justify-content:flex-start;
+    padding:0;
+}
+
+.return-button__highlight{
+    position:absolute;
+    left:4px;
+    top:50%;
+    transform:translateY(-50%);
+    height:50px;
+    width:50px;
+    background:#ffd4e3;
+    border-radius:20px;
+    display:flex;
+    align-items:center;
+    justify-content:flex-start;
+    padding-left:14px;
+    transition:width .4s ease;
+    z-index:2;
+}
+
+.return-button__highlight svg{
+    width:22px;
+    height:22px;
+    fill:#c44469;
+}
+
+.return-label{
+    position:relative;
+    z-index:3;
+    margin-left:62px;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    min-width:80px;
+    height:100%;
+}
+
+.return-label::before{
+    content:"Fechar";
+    position:absolute;
+    left:0;
+    top:50%;
+    transform:translateY(-50%);
+    width:100%;
+    opacity:1;
+    transition:opacity .3s ease,transform .3s ease;
+    color:#c44469;
+    display:inline-block;
+}
+
+.return-label::after{
+    content:attr(data-hover);
+    position:absolute;
+    left:0;
+    top:50%;
+    transform:translateY(calc(-50% + 8px));
+    width:100%;
+    opacity:0;
+    transition:opacity .3s ease,transform .3s ease;
+    color:#c44469;
+    display:inline-block;
+}
+
+.return-button:hover .return-label::before{
+    opacity:0;
+    transform:translateY(calc(-50% - 8px));
+}
+
+.return-button:hover .return-label::after{
+    opacity:1;
+    transform:translateY(-50%);
+}
+
+.return-button:not(:hover) .return-label::before{
+    opacity:1;
+    transform:translateY(-50%);
+}
+
+.return-button:not(:hover) .return-label::after{
+    opacity:0;
+    transform:translateY(calc(-50% + 8px));
+}
+
+.return-button:hover .return-button__highlight{
+    width:180px;
+}
+
+.return-button:active{
+    transform:translateY(2px);
+}
+
+/* Responsivo */
+@media (max-width:768px){
+    .videos-wrapper{
+        padding:24px;
+    }
+    
+    .videos-header h1{
+        font-size:36px;
+    }
+    
+    .videos-grid{
+        grid-template-columns:1fr;
+        gap:20px;
+    }
+    
+    .video-card{
+        padding:12px;
+    }
+}
+
+@media (max-width:480px){
+    body.videos-page{
+        padding:16px;
+    }
+    
+    .videos-wrapper{
+        padding:20px;
+    }
+    
+    .videos-header h1{
+        font-size:32px;
+    }
+    
+    .return-button{
+        width:170px;
+        height:52px;
+        font-size:16px;
+    }
+}

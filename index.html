@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosso tempo juntos</title>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.Css">
+    <meta name="theme-color" content="#ffdde1">
+    <link rel="shortcut icon" href="assets/icon/margaridas.ico" type="Icone-Margarida">
+    
+</head>
+<body>
+    <main class="card">
+        <header class="hero">
+            <div class="names">
+                <h1><span class="name">Dayse</span> <span class="heart">❤</span> <span class="name">Gabryel</span></h1>
+                <p class="sub">Desde 18/03/2025 — contando cada instante</p>
+            </div>
+            <div class="photos">
+                <div class="photo photo-left" id="photoLeft" title="Sua foto"></div>
+                <div class="photo photo-center" id="photoCenter" title="Foto especial"></div>
+                <div class="photo photo-right" id="photoRight" title="Foto dela"></div>
+            </div>
+        </header>
+
+        <section class="timer-section">
+            <h2 class="section-title">Nosso contador do amor</h2>
+            <div class="timer-grid" id="timer">
+                <div class="time-block">
+                    <div class="nums nums-years">
+                        <div class="num" id="years" data-num="0" data-num-next="0">0</div>
+                    </div>
+                    <div class="label">Anos</div>
+                </div>
+                <div class="time-block">
+                    <div class="nums nums-months">
+                        <div class="num" id="months" data-num="0" data-num-next="0">0</div>
+                    </div>
+                    <div class="label">Meses</div>
+                </div>
+                <div class="time-block">
+                    <div class="nums nums-days">
+                        <div class="num" id="days" data-num="0" data-num-next="0">0</div>
+                    </div>
+                    <div class="label">Dias</div>
+                </div>
+                <div class="time-block">
+                    <div class="nums nums-hours">
+                        <div class="num" id="hours" data-num="00" data-num-next="00">00</div>
+                    </div>
+                    <div class="label">Horas</div>
+                </div>
+                <div class="time-block">
+                    <div class="nums nums-minutes">
+                        <div class="num" id="minutes" data-num="00" data-num-next="00">00</div>
+                    </div>
+                    <div class="label">Minutos</div>
+                </div>
+                <div class="time-block">
+                    <div class="nums nums-seconds">
+                        <div class="num" id="seconds" data-num="00" data-num-next="00">00</div>
+                    </div>
+                    <div class="label">Segundos</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="playlist-section">
+            <div class="spotify-card">
+                <h2>Trilha sonora do amor</h2>
+                <iframe data-testid="embed-iframe" style="border-radius: 12px"
+                    src="https://open.spotify.com/embed/playlist/1oWlikTgTMHetsPj2TVBCF?utm_source=generator"
+                    width="100%" height="352" frameBorder="0" allowfullscreen=""
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                    loading="lazy"></iframe>
+            </div>
+
+            <button class="love-letter-btn" id="love-letter-btn" type="button">
+                Clique aqui pra ler uma cartinha de amor!💘😁
+                <div class="icon-1">
+                    <svg viewBox="0 0 26.3 65.33" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.98 52.87c0.37,-0.8 0.6,-1.74 0.67,-2.74 1.01,1.1 2.23,2.68 1.24,3.87 -0.22,0.26 -0.41,0.61 -0.59,0.97 -2.95,5.89 3.44,10.87 2.98,0.78 0.29,0.23 0.73,0.82 1.03,1.18 0.33,0.4 0.7,0.77 1,1.15 0.29,0.64 -0.09,2.68 1.77,4.91 5.42,6.5 5.67,-2.38 0.47,-4.62 -0.41,-0.18 -0.95,-0.26 -1.28,-0.54 -0.5,-0.41 -1.23,-1.37 -1.66,-1.9 0.03,-0.43 -0.17,-0.13 0.11,-0.33 4.98,1.72 8.4,-1.04 2.38,-3.16 -1.98,-0.7 -2.9,-0.36 -4.72,0.16 -0.63,-0.58 -2.38,-3.82 -2.82,-4.76 1.21,0.56 1.72,1.17 3.47,1.3 6.5,0.5 2.31,-4.21 -2.07,-4.04 -1.12,0.04 -1.62,0.37 -2.49,0.62l-1.25 -3.11c0.03,-0.26 0.01,-0.18 0.1,-0.28 1.35,0.86 1.43,1 3.25,1.45 2.35,0.15 3.91,-0.15 1.75,-2.4 -1.22,-1.27 -2.43,-2.04 -4.22,-2.23l-2.08 0.13c-0.35,-0.58 -0.99,-2.59 -1.12,-3.3 -0.24,-0.36 1.88,1.31 2.58,1.57 1.32,0.49 2.6,0.33 3.82,0 -0.37,-1.08 -1.17,-2.31 -2.13,-3.11 -1.79,-1.51 -3.07,-1.41 -5.22,-1.38l-0.93 -4.07c0.41,-0.57 1.41,0.9 2.82,1.36 0.96,0.31 1.94,0.41 3,0.14 2,-0.52 -2.25,-4.4 -4.53,-4.71 -0.7,-0.1 -1.23,-0.04 -1.92,-0.03 -0.46,-0.82 -0.68,-3.61 -0.92,-4.74 0.8,0.88 1.15,1.54 2.25,2.23 0.8,0.5 1.58,0.78 2.57,0.85 2.54,0.18 -0.1,-3.47 -0.87,-4.24 -1.05,-1.05 -2.34,-1.59 -4.32,-1.78l-0.33 -3.49c0.83,0.67 1.15,1.48 2.3,2.16 1.07,0.63 2.02,0.89 3.58,0.79 0.15,-1.34 -1.07,-3.39 -2.03,-4.3 -1.05,-0.99 -2.08,-1.47 -3.91,-1.68l-0.07 -3.27 0.32 -0.65c0.44,0.88 1.4,1.74 2.24,2.22 0.69,0.39 2.4,1.1 3.44,0.67 0.31,-1.92 -1.84,-4.49 -3.5,-5.29 -0.81,-0.39 -1.61,-0.41 -2.18,-0.68 -0.12,-1.28 0.27,-3.23 0.37,-4.55l-0.89 0c-0.06,1.28 -0.35,3.12 -0.34,4.31 -0.44,0.45 -0.37,0.42 -0.96,0.64 -3.88,1.49 -4.86,6.38 -3.65,7.34 1.42,-0.31 3.69,-2.14 4.16,-3.66 0.23,0.5 0.1,2.36 0.05,3.05 -1.23,0.4 -2.19,1.05 -2.92,1.82 -1.17,1.24 -2.36,4.04 -1.42,5.69 1.52,0.09 4.07,-2.49 4.49,-4.07l0.29 3.18c-2.81,0.96 -5.01,3.68 -4.18,7.43 2.06,-0.09 3.78,-2.56 4.66,-4.15 0.23,1.45 0.67,3.06 0.74,4.52 -1.26,0.93 -2.37,1.8 -2.97,3.55 -0.48,1.4 -0.49,3.72 0.19,4.55 0.59,0.71 2.06,-1.17 2.42,-1.67 1,-1.35 0.81,-1.92 1.29,-2.46l0.7 3.44c-0.49,0.45 -0.94,0.55 -1.5,1.19 -1.93,2.23 -2.14,4.33 -1.01,6.92 0.72,0.09 2.04,-1.4 2.49,-2.06 0.65,-0.95 0.79,-1.68 1.14,-2.88l0.97 2.92c-0.2,0.55 -1.84,1.32 -2.6,3.62 -0.54,1.62 -0.37,3.86 0.67,4.93 0.58,-0.09 1.85,-1.61 2.2,-2.19 0.66,-1.09 0.66,-1.64 1,-2.93l1.32 3.18c-0.23,0.72 -1.63,1.72 -1.82,4.18 -0.17,2.16 1.11,6.88 3.13,2.46zm-4.09 -16.89l-0 0z" />
+                    </svg>
+                </div>
+                <div class="icon-2">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 21s-6.5-4.35-8.47-8.07C1.3 9.23 2.05 6.13 4.58 4.82 6.32 3.92 8.47 4.3 10 5.65c1.53-1.35 3.68-1.73 5.42-.83 2.53 1.31 3.28 4.41 1.05 8.11C18.5 16.65 12 21 12 21z" />
+                    </svg>
+                </div>
+                <div class="icon-3">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4.318 2.318a4.5 4.5 0 0 1 6.364 0L12 3.636l1.318-1.318a4.5 4.5 0 1 1 6.364 6.364L12 16.364 4.318 8.682a4.5 4.5 0 0 1 0-6.364z" />
+                    </svg>
+                </div>
+            </button>
+        </section>
+
+        <footer class="footer">
+            <p>Feito com <span class="heart small">❤</span> — Para minha Margarida!🌼😁</p>
+            <div class="audio-controls">
+                <div class="music-controls">
+                    <button class="music-control-btn" id="play-music-btn" type="button">▶️ Tocar</button>
+                    <button class="music-control-btn pause-btn" id="pause-music-btn" type="button">⏸️ Pausar</button>
+                </div>
+                <label class="slider" id="volume-slider">
+                    <input type="range" class="level" min="0" max="100" value="60">
+                    <svg class="volume" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M18.36 19.36a1 1 0 0 1-.705-1.71C19.167 16.148 20 14.142 20 12s-.833-4.148-2.345-5.65a1 1 0 1 1 1.41-1.419C20.958 6.812 22 9.322 22 12s-1.042 5.188-2.935 7.069a.997.997 0 0 1-.705.291z"></path>
+                        <path d="M15.53 16.53a.999.999 0 0 1-.703-1.711C15.572 14.082 16 13.054 16 12s-.428-2.082-1.173-2.819a1 1 0 1 1 1.406-1.422A6 6 0 0 1 18 12a6 6 0 0 1-1.767 4.241.996.996 0 0 1-.703.289zM12 22a1 1 0 0 1-.707-.293L6.586 17H4c-1.103 0-2-.897-2-2V9c0-1.103.897-2 2-2h2.586l4.707-4.707A.998.998 0 0 1 13 3v18a1 1 0 0 1-1 1z"></path>
+                    </svg>
+                </label>
+            </div>
+        </footer>
+    </main>
+
+    <button class="magic-button" id="open-gallery" type="button" aria-haspopup="dialog" aria-controls="gallery-panel">
+        <svg class="button-cosm" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" aria-hidden="true">
+            <path d="M243.07324,157.43945c-1.2334-1.47949-23.18847-27.34619-60.46972-41.05859-1.67579-17.97412-8.25293-34.36328-18.93653-46.87158C149.41309,52.8208,128.78027,44,104,44,54.51074,44,22.10059,88.57715,20.74512,90.4751a3.99987,3.99987,0,0,0,6.50781,4.65234C27.5625,94.6958,58.68359,52,104,52c22.36816,0,40.89648,7.85107,53.584,22.70508,8.915,10.437,14.65625,23.9541,16.65528,38.894A133.54185,133.54185,0,0,0,136,108c-25.10742,0-46.09473,6.48486-60.69434,18.75391-12.65234,10.63379-19.91015,25.39355-19.91015,40.49463a43.61545,43.61545,0,0,0,12.69336,31.21923C76.98438,207.3208,89.40234,212,104,212c23.98047,0,44.37305-9.4668,58.97461-27.37744,12.74512-15.6333,20.05566-37.145,20.05566-59.01953,0-.1128-.001-.22559-.001-.33838,33.62988,13.48486,53.62207,36.96631,53.89746,37.2959a4.00015,4.00015,0,0,0,6.14648-5.1211ZM104,204c-27.89746,0-40.60449-19.05078-40.60449-36.75146C63.39551,142.56592,86.11621,116,136,116a124.37834,124.37834,0,0,1,38.97266,6.32617q.05712,1.63038.05761,3.27686C175.03027,177.07129,139.29785,204,104,204Z"></path>
+        </svg>
+        <svg class="highlight" viewBox="0 0 144.75738 77.18431" preserveAspectRatio="none" aria-hidden="true">
+            <g transform="translate(-171.52826,-126.11624)">
+                <g fill="none" stroke-width="17" stroke-linecap="round" stroke-miterlimit="10">
+                    <path d="M180.02826,169.45123c0,0 12.65228,-25.55115 24.2441,-25.66863c6.39271,-0.06479 -5.89143,46.12943 4.90937,50.63857c10.22345,4.2681 24.14292,-52.38336 37.86455,-59.80493c3.31715,-1.79413 -5.35094,45.88889 -0.78872,58.34589c5.19371,14.18125 33.36934,-58.38221 36.43049,-56.91633c4.67078,2.23667 -0.06338,44.42744 5.22574,47.53647c6.04041,3.55065 19.87185,-20.77286 19.87185,-20.77286"></path>
+                </g>
+            </g>
+        </svg>
+        Abrir galeria
+    </button>
+
+    <div class="loader-screen" id="loader-overlay" aria-hidden="true">
+        <div class="loader"></div>
+        <p>Carregando memórias...</p>
+    </div>
+
+    <section class="gallery-panel" id="gallery-panel" aria-hidden="true" role="dialog" aria-labelledby="gallery-title">
+        <div class="gallery-card">
+            <div class="gallery-header">
+                <h2 id="gallery-title">Nossa galeria de fotos</h2>
+                <button class="return-button" id="close-gallery" type="button">
+                    <div class="return-button__highlight">
+                        <svg viewBox="0 0 1024 1024">
+                            <path d="M224 480h640a32 32 0 1 1 0 64H224a32 32 0 0 1 0-64z"></path>
+                            <path d="m237.248 512 265.408 265.344a32 32 0 0 1-45.312 45.312l-288-288a32 32 0 0 1 0-45.312l288-288a32 32 0 1 1 45.312 45.312L237.248 512z"></path>
+                        </svg>
+                    </div>
+                    <span class="return-label" data-hover="Voltar"></span>
+                </button>
+            </div>
+
+            <p class="browser-warning">
+                Se algo estiver tortinho, é porque seu navegador não suporta a propriedade CSS “aspect-ratio”. Mas o amor continua lindo! 💗
+            </p>
+
+            <div class="gallery-body">
+                <div class="stack-grid" id="gallery-stack">
+                    <div class="stack" data-photo="Foto 1">
+                        <div class="gallery-stack-card">
+                            <div class="gallery-image" style="background-image:url('assets/img/Foto 1.jpg')"></div>
+                        </div>
+                    </div>
+                    <div class="stack" data-photo="Foto 2">
+                        <div class="gallery-stack-card">
+                            <div class="gallery-image" style="background-image:url('assets/img/Foto 2.jpg')"></div>
+                        </div>
+                    </div>
+                    <div class="stack" data-photo="Foto 3">
+                        <div class="gallery-stack-card">
+                            <div class="gallery-image" style="background-image:url('assets/img/Foto 3.jpg')"></div>
+                        </div>
+                    </div>
+                    <div class="stack" data-photo="Foto 4">
+                        <div class="gallery-stack-card">
+                            <div class="gallery-image" style="background-image:url('assets/img/Foto 4.jpg')"></div>
+                        </div>
+                    </div>
+                    <div class="stack" data-photo="Foto 5">
+                        <div class="gallery-stack-card">
+                            <div class="gallery-image" style="background-image:url('assets/img/Foto 5.jpg')"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="folder-wrapper">
+                    <section class="file-scene" id="video-folder" tabindex="0" role="button" aria-label="Abrir pasta de vídeos">
+                        <div class="file">
+                            <div class="work work-5"></div>
+                            <div class="work work-4"></div>
+                            <div class="work work-3"></div>
+                            <div class="work work-2"></div>
+                            <div class="work work-1"></div>
+                        </div>
+                    </section>
+                    <p class="video-label">Nossos vídeos</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="photo-modal" id="photo-modal">
+        <img class="photo-modal-content" id="photo-modal-img" src="" alt="Foto ampliada">
+    </div>
+
+    <svg height="0" width="0" aria-hidden="true" class="hidden-filters">
+        <filter id="handDrawnNoise">
+            <feTurbulence result="noise" numOctaves="8" baseFrequency="0.1" type="fractalNoise"></feTurbulence>
+            <feDisplacementMap yChannelSelector="G" xChannelSelector="R" scale="3" in2="noise" in="SourceGraphic"></feDisplacementMap>
+        </filter>
+        <filter id="handDrawnNoise2">
+            <feTurbulence result="noise" numOctaves="8" baseFrequency="0.1" seed="1010" type="fractalNoise"></feTurbulence>
+            <feDisplacementMap yChannelSelector="G" xChannelSelector="R" scale="3" in2="noise" in="SourceGraphic"></feDisplacementMap>
+        </filter>
+        <filter id="handDrawnNoiset">
+            <feTurbulence result="noise" numOctaves="8" baseFrequency="0.1" type="fractalNoise"></feTurbulence>
+            <feDisplacementMap yChannelSelector="G" xChannelSelector="R" scale="6" in2="noise" in="SourceGraphic"></feDisplacementMap>
+        </filter>
+        <filter id="handDrawnNoiset2">
+            <feTurbulence result="noise" numOctaves="8" baseFrequency="0.1" seed="1010" type="fractalNoise"></feTurbulence>
+            <feDisplacementMap yChannelSelector="G" xChannelSelector="R" scale="6" in2="noise" in="SourceGraphic"></feDisplacementMap>
+        </filter>
+    </svg>
+
+    <script src="script.js"></script>
+</body>
+</html>
